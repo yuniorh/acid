@@ -20,7 +20,7 @@ variable "spot" {
 
 variable "region" {
   type        = string
-  default     = "West Europe"
+  default     = "East US"
   description = "Location."
 }
 

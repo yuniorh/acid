@@ -19,7 +19,7 @@ variable "spot" {
 
 variable "region" {
   type        = string
-  default     = "eu-west-1"
+  default     = "us-east-1"
   description = "AWS region."
 }
 
@@ -91,7 +91,7 @@ resource "aws_spot_instance_request" "agent" {
     # https://github.com/terraform-providers/terraform-provider-aws/issues/32
     # Using "aws_ec2_tag" generates issues on destroy
     command = <<-EOF
-    aws ec2 create-tags --region eu-west-1 \
+    aws ec2 create-tags --region us-east-1 \
     --resources ${self.spot_instance_id} --tags Key=Name,Value="${local.name}" \
     EOF
   }

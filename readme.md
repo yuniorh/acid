@@ -213,8 +213,8 @@ Agent hardware configuration:
    * awsEc2: `AWS`
    * azureVm: `Azure`
 * `region`: Region on AWS, Location on Azure. Default values:
-   * awsEc2: `eu-west-1`
-   * azureVm: `West Europe`
+   * awsEc2: `us-east-1`
+   * azureVm: `East US`
 * `instanceType`: Instance type on AWS EC2, Virtual machine size on Azure Virtual 
   Machines. Default values:
    * awsEc2: `t3a.micro`
